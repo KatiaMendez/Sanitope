@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container2">
+    <div id="main-wrapper">
+        <ul class="breadcrumb">
+            <li class="active-trail"><a href="/explora"><i class="fa fa fa-home"></i><span> Ir a lista inicial  </span></a>
+            </li>
+            <h3><b>Datasets habilitados</b></h3>
+        </ul>
+    </div>
+
+    <div class="card card-body text-center border-info">
+        <table class="table table-striped table-hover table-bordered table-sm bg-white">
+            <thead>
+            <tr>
+                <th style="vertical-align:middle;"><b>Id</b></th>
+                <th style="vertical-align:middle;"><b>Dataset</b></th>
+                <th style="vertical-align:middle;"><b>Descripción</b></th>
+                <th style="vertical-align:middle;"><b>Años de alcance</b></th>
+                <th style="vertical-align:middle;"><b>Descarga Datos</b></th>
+                <th style="vertical-align:middle;"><b>Descarga Diccionarios</b></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for dataset in datasets %}
+                <tr>
+                    <td style="vertical-align:middle;">{{dataset.0}}</td>
+                    <td style="vertical-align:middle;">{{dataset.1}}</td>
+                    <td style="vertical-align:middle;">{{dataset.2}}</td>
+                    <td style="vertical-align:middle;">{{dataset.3}}</td>
+                    <td>
+                        <a href="../static/files/Doc/BD{{dataset.0}}/BD{{dataset.0}}.csv" class="btn btn-default btn-sm" target="_blank">CSV</a>
+                        <a href="../static/files/Doc/BD{{dataset.0}}/BD{{dataset.0}}.json" class="btn btn-default btn-sm" target="_blank">JSON</a>   
+                        <a href="../static/files/Doc/BD{{dataset.0}}/BD{{dataset.0}}.dta" class="btn btn-default btn-sm"  target="_blank">STATA</a>                    
+                    </td>
+                    <td>
+                        <a href="../static/files/Dicc/BD{{dataset.0}}/DiccionarioBD{{dataset.0}}-CSV.zip" download class="btn btn-default btn-sm" target="_blank">CSV</a>
+                        <a href="../static/files/Dicc/BD{{dataset.0}}/DiccionarioBD{{dataset.0}}-PDF.zip" download class="btn btn-default btn-sm" target="_blank">PDF</a>
+                        <a href="../static/files/Dicc/BD{{dataset.0}}/DiccionarioBD{{dataset.0}}-XLSX.zip" download class="btn btn-default btn-sm" target="_blank">XLSX</a>  
+                    </td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

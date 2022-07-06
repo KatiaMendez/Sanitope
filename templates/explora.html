@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container"> 
+  <div id="main-wrapper">
+    <ul class="breadcrumb">
+        <li class="active-trail"><a href="/exploraInstitucion"><i class="fa-solid fa-building-columns"></i><span> Seleccionar</span></a>
+        </li>
+        <h3><b>POR INSTIUCIÓN</b></h3>
+    </ul>
+  </div> 
+  <div>
+    <div class="grupo-d">
+      <div class="box">
+          <figure>
+                  <img src="../static/Images/INEI.gif" alt="INEI">
+          </figure>
+      </div>
+      <div class="box">
+        <figure>
+              <img src="../static/Images/MEF.gif" alt="MEF">
+        </figure>
+      </div>
+      <div class="box">
+        <figure>
+              <img src="../static/Images/MIDIS.gif" alt="MIDIS">
+        </figure>
+      </div>
+      <div class="box">
+        <figure>
+              <img src="../static/Images/Otros.gif" alt="Otros">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!--por implementar en una segunda versión 
+  <div id="main-wrapper">
+    <ul class="breadcrumb">
+        <li class="active-trail"><a href="/exploraFuenteDatos"><i class="fa-solid fa-book-open"></i><span> Seleccionar</span></a>
+        </li>
+        <h3><b>POR FUENTE DE DATOS</b></h3>
+    </ul>
+  </div> 
+  <div class="grupo-d">
+    <div class="box">
+        <figure>
+                <img src="../static/Images/ENDES.gif" alt="ENDES">
+        </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/renamu.gif" alt="RENAMU">
+      </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/ConsAmigable.gif" alt="ConsultaAmigable">
+      </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/PlanMultisectorial.gif" alt="PlanMIDIS">
+      </figure>
+    </div>
+  </div>
+ -->
+  <div id="main-wrapper">
+    <ul class="breadcrumb">
+        <li class="active-trail"><a href="/exploraDataset"><i class="fa-solid fa-database"></i><span> Seleccionar</span></a>
+        </li>
+        <h3><b>POR DATASETS TRABAJADOS</b></h3>
+    </ul>
+  </div> 
+  <div class="grupo-d">
+    <div class="box">
+        <figure>
+                <img src="../static/Images/BD1.gif" alt="Info_endes">
+        </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/GastoPAN.gif" alt="PAN">
+      </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/GastoHIERRO.gif" alt="HIERRO">
+      </figure>
+    </div>
+    <div class="box">
+      <figure>
+            <img src="../static/Images/objetivos.gif" alt="Objetivos">
+      </figure>
+    </div>
+  </div>
+</div>
+    
+
+{% endblock %}

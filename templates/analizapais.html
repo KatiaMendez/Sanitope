@@ -1,0 +1,229 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container2">
+  <div id="main-wrapper">
+    <ul class="breadcrumb">
+        <li class="active-trail"><a href="/analiza"><i class="fa fa fa-home"></i><span> Ir a lista</span></a>
+        </li>
+        <h3><b>Análisis a Nivel País</b></h3>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="grupo-a">
+        <h3>Indicadores Globales</h3>
+        <p>Como se puede apreciar, el índice de anemia no ha presentado mejoría significativa en los últimos años,
+            ya que desde el 2011 que presentó un valor de 41,6%, solo hemos podido reducir 2,8% en los últimos 10
+            años. Si analizamos las cifras por región natural, podremos notar que la sierra ha sido, casi siempre,
+            la región más afectada y, por el contrario, Lima metropolitana o ciudad, ha sido la que ha mantenido
+            mejor este indicador. Sobre este mismo análisis, sería importante validar el índice de anemia para
+            Lima en el año 2011, ya que como se puede apreciar, representa un valor atípico y puede que esté
+            distorsionando los indicadores para este año. En cuanto al análisis por área de residencia,
+            podemos notar que es el área rural el que más padece con este problema, esta situación ha sido
+            evidente desde hace muchos años, por la dificulta de acceso que
+            tienen las personas que viven en zonas rurales por los planes de lucha contra la anemia siempre
+            mencionaban un mayor foco en esta población afectada, sin embargo, si analizamos la evolución
+            desde el 2018, podemos ver que en el área urbana se ha tenido una mejoría en 5.8 puntos porcentuales,
+            mientras que en el área rural, en este mismo periodo, solo se ha tenido una mejoría de 2,2 puntos
+            porcentuales. Esta situación debería involucrar una revisión de los planes y su aplicación. Finalmente,
+            también podemos ver la evaluación por nivel de severidad, en donde se aprecia que la anemia severa,
+            que es la más preocupante, siempre ha mantenido un valor pequeño y que ha caído un poco más en los
+            últimos años. Vemos el mismo reflejo en la anemia moderada, sin embargo, vemos que la anemia leve
+            persiste en niveles similares desde el 2009.</p>
+        <div class='tableauPlaceholder' id='viz1656422244228' style='position: relative'><noscript><a href='#'><img
+                        alt='Vista_Gnral '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_Gnral&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DB_IndAnemia_pas&#47;Vista_Gnral' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_Gnral&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1656422244228'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1477px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <h3>Factores Demográficos y Económicos</h3>
+        <p>Aquí hemos realizado la comparación entre el año 2009 y el 2021, los cuales se pueden visualizar
+            utilizando el filtro de año.
+            En primer lugar, podemos ver como el mapa de región política, muestra una buena mejoría en el año 2021
+            ya que tiene una mayor incidencia del color amarillo, que representa menor porcentaje de anemia.
+            Así mismo, en la gráfica de barras del mismo acápite “región política”, podemos ver una preocupante
+            cifra para la región Puno (remarcada de rojo), que luego de 12 años, solo ha disminuido un 2.3%.
+            Con respecto a los demás ítems, tenemos: (1) rango etario, se puede ver que la anemia disminuye a lo
+            largo del crecimiento; (2) intervalo de nacimiento, en la mayoría de los años evaluados, se aprecia
+            menor incidencia en los primeros nacimientos o los nacimientos luego de 48 meses, lo que nos muestra
+            que el cuidado de una mayor cantidad de niños puede representar un factor importante para el índice
+            analizado; (3) sexo, aquí vemos mayor preponderancia en el sexo masculino; (4) orden de nacimiento,
+            vemos que la incidencia es menor en los primeros hijos, esto creemos que se puede deber a los cuidados
+            que suelen ser mayores al iniciar la maternidad/paternidad; y finalmente, (4) quintil de riqueza,
+            sobre este punto es claro que el índice de anemia es mucho mayor para la población más pobre y que
+            a través de los años, la reducción para este sector de la población, es la misma que para los demás.
+        </p>
+        <div class='tableauPlaceholder' id='viz1656422607098' style='position: relative'><noscript><a href='#'><img
+                        alt='Vista_xAño '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_xAo&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DB_IndAnemia_pas&#47;Vista_xAo' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_xAo&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1656422607098'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '2777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <h3><u>Factores formativos y de Salud</u></h3>
+        <p>Esta visualización se puede apreciar un análisis evolutivo a través de los años. Con respecto al grado de
+            instrucción del responsable, se puede apreciar que el índice de anemia es menor para niños cuyo responsable
+            tienen
+            nivel educativo más alto. Por ejemplo, en el caso de responsables con nivel educativo superior (universitaria o
+            técnica), presenta un indicador de anemia que no sobrepasa el 36% en ningún año. Esto nos orienta a que el
+            factor
+            educativo en los padres influye notablemente en el índice de anemia.
+            Por otro, procedimos a analizar el ítem de seguro de salud, que incluye el porcentaje de niños con seguro y la
+            relación del índice de anemia con la condición de asegurado, aquí podemos apreciar que el nivel de niños con
+            seguro
+            ya sea público o privado, es bastante elevado y para el año 2021 representa el 92.5%. Sobre este punto
+            se verificó la relación del índice de anemia en función de la condición de asegurado y se identificó que, si
+            bien a
+            partir del 2011 el índice de anemia es menor en los niños que cuentan con seguro, se encontró una distorsión
+            para
+            el año 2020, en donde se aprecia que el índice de anemia es menor para los niños que no contaban con seguro.
+            Según
+            las respuestas recibidas por personal salud, esta situación se podría dar debido a que, en el 2020, año de
+            pandemia,
+            el grado de recurrencia de niños a los centros de salud para seguimiento y control disminuyó considerablemente.
+            El
+            siguiente ítem por evaluar es la relación del índice de anemia con respecto al peso y talla al nacer. Para ambos
+            casos no se pudo identificar una correlación significativa con estas variables, ya que los valores de porcentaje
+            de
+            anemia son similares o no son consistente a través de los años.
+        </p>
+        <div class='tableauPlaceholder' id='viz1656456349672' style='position: relative'><noscript><a href='#'><img
+                        alt='Vista_xAñoForSal '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_xAoForSal&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DB_IndAnemia_pas&#47;Vista_xAoForSal' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_xAoForSal&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1656456349672'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1827px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <h3>Índice Objetivo y Gasto Devengado PAN</h3>
+        <p> Vemos el comparativo del índice real versus el índice objetivo, como se puede apreciar, es preocupante
+            ver la distancia que hay entre estas dos medidas. La brecha alcanzada entre el índice de anemia y el
+            índice objetivo, para el año 2021, está sobre el 19%. Por lo mencionado, debemos mantenernos vigilantes
+            ante las nuevas medidas que serán tomadas. Sobre el segundo gráfico, el que se encuentra a la derecha,
+            comparativa entre el gasto devengado PAN y el índice de anemia, se incluyó ya que el PAN, es uno de los
+            principales programas contra lucha de las diversas formas de malnutrición, incluyendo la anemia. Como se
+            puede apreciar en la gráfica, a excepción del año 2020, el devengado para el PAN, se ha venido
+            incrementando año a año y si bien se aprecia mejoras en el índice de anemia, no se puede ver una mejoría
+            que corresponda significativamente a los incrementos del devengado en el PAN. Habría que analizar más a
+            detalle este punto, incluyendo el detalle de productos específicos, como el análisis de la inversión en
+            complementos de hierro, que se realiza en la siguiente gráfica.</p>
+        <div class='tableauPlaceholder' id='viz1656458764650' style='position: relative'><noscript><a href='#'><img
+                        alt='Vista_Gnral2 '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_Gnral2&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DB_IndAnemia_pas&#47;Vista_Gnral2' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Vista_Gnral2&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1656458764650'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '777px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+        <h3>Consumo de hierro, anemia en embarazo y lactancia</h3>
+        <p> se ha incluido el comparativo entre el gasto devengado del producto “Niños con suplemento de hierro y Vitamina
+            A”,
+            en contraste con el porcentaje de niños con suplemento de hierro, observándose que parecen tener una relación
+            directa (a mayor inversión, mayor cobertura). Por otro lado, al realizar la comparativa entre niños que
+            consumieron
+            hierro y el índice de anemia (cuadro de la parte izquierda inferior), se identificó que el índice de anemia es
+            mayor
+            en los niños que consumieron suplemento de hierro, lo cual no resulta coherente, pero podría tener sustento en
+            dos
+            posibles causas: primero, que este indicador no especifica la proporción de suplemento que se brindó, así que en
+            muchos casos podría ser insuficiente y segundo, que el entregar el suplemento, no confirma el consumo y menos,
+            el
+            consumo adecuado. En relación con la anemia durante el embarazo, se puede apreciar que el índice de niños con
+            anemia
+            es mayor en el grupo de madres que tuvieron anemia durante el embarazo. Finalmente, con respecto a la lactancia
+            exclusiva, se aprecia que el índice de anemia es mayor entre los niños con lactancia exclusiva. Esto es un poco
+            extraño, ya que es una recomendación de la OMS, pero se podría explicar, por factores adicionales, como lo es,
+            laanemia durante el embarazo.</p>
+        <div class='tableauPlaceholder' id='viz1656461571983' style='position: relative'><noscript><a href='#'><img
+                        alt='Gnrl_Hierro '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Gnrl_Hierro&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='DB_IndAnemia_pas&#47;Gnrl_Hierro' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DB&#47;DB_IndAnemia_pas&#47;Gnrl_Hierro&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1656461571983'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        <p><br> </br></p>
+    </div>
+  </div>
+  <div id="main-wrapper">
+    <ul class="breadcrumb">
+        <li class="active-trail"><a href="/analiza"><i class="fa fa fa-home"></i><span> Ir a lista</span></a>
+        </li>
+        <li class="active-trail"><a href="/analizaregion"><span>Análisis Región </span><i class="fa-solid fa-angles-right"></i></a>
+        </li>
+    </ul>
+</div>
+</div>
+{% endblock %}

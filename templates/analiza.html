@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+    <div id="main-wrapper">
+        <ul class="breadcrumb">
+            <li class="active-trail"><a href="#"><i class="fa-solid fa-bullseye-arrow"></i><span> Estudio 1</span></a>
+            </li>
+            <h3><b>Análisis del índice de anemia infantil</b></h3>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="grupo-a">
+            <p>A continuación se presenta los dasboards y un análisis del índice de anemia en relación con factores 
+                demográficos, económicos, formativos y de salud. La fuente de datos ha sido la Encuesta Demográfica de Salud 
+                Familiar (ENDES), realizada anualmente por el Instituto Nacional de Estadística e Informática (INEI), desde el año 2009.
+                Para el análisis se ha tomado como alcance, la totalidad de niños de 6 a 35 meses de edad, sin embargo, 
+                se cuenta con datos de niños de 0 a 5 años de edad. 
+                Considerar que para el análisis también se incluye datos de los índices objetivos obtenidos del Ministerio de Desarrollo 
+                e Inclusión Social (MIDIS) y datos del gasto devengado, obtenidos del Ministerio de Economía y Finanzas (MEF).
+                El análisis que se realizó se divide en dos acápites principales:</p>
+            <div class="grupo-b">
+                <div class="box">
+                    <h3>Anális global a nivel país</h3>
+                    <p>Se ha preparado una análisis completo de los indicadores a nivel país en Tableau, el cual puedes acceder mediante el siguiente 
+                    <a href="https://public.tableau.com/shared/Q3W23JMRN?:display_count=n&:origin=viz_share_link"
+                    target="_blank">enlace</a>.<br> Si prefieres ver el análisis completo, da clik en la siguiente imagen:</p>
+                    <figure>
+                        <a href="/analizapais">
+                            <img src="../static/Images/DB-Pais.png" alt="analizapais">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <h3>Anális a nivel regional</h3>
+                    <p>Se ha realizado un análisis por región, incluyendo los faCtores más relevantes. Puedes acceder en Tableau en el siguiente 
+                    <a href="https://public.tableau.com/shared/KHDJGQT23?:display_count=n&:origin=viz_share_link"
+                    target="_blank">enlace</a>.<br> Si prefieres ver el análisis completo, da clik en la siguiente imagen:</p>
+                    <figure>
+                        <a href="/analizaregion">
+                            <img src="../static/Images/DB-Region.png" alt="analizapais">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

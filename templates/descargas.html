@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <div class="row">
+        <div class="col-md-5">
+            {% with messages = get_flashed_messages()  %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>   
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+            
+            <div class="card-header text-center border-info" style="width: 50rem;">
+                <span style="float: right;">Ventas</span>
+            </div>
+
+
+            <div class="card card-body text-center border-info" style="width: 50rem;">
+                <table class="table table-striped table-hover table-bordered table-sm bg-white">
+                    <thead>
+                    <tr>
+                        <th><b>Código</b></th>
+                        <th><b>Encuesta</b></th>
+                        <th><b>Año</b></th>
+                        <th><b>Operation</b></th>
+                        <th><b>Descargar</b></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for encuesta in encuestas %}
+                        <tr>
+                            <td style="vertical-align:middle;">{{encuesta.0}}</td>
+                            <td style="vertical-align:middle;">{{encuesta.1}}</td>
+                            <td style="vertical-align:middle;">{{encuesta.2}}</td>
+                            <td>
+                                <a href="http://iinei.inei.gob.pe/iinei/srienaho/descarga/FichaTecnica/{{encuesta.0}}-Ficha.pdf" class="btn btn-secondary" target="_blank">Abrir</a>                           
+                            </td>
+                            <td style="vertical-align:middle;"><input type="checkbox" class="valores" id="cbox" value="{{encuesta.0}}"></td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+
+                <p>
+                    <button type="button" id="boton">Mostrar valores seleccionados</button>
+                </p>
+
+                    <h2>Valores seleccionados</h2>
+                    <ul id="lista" class="list-group"></ul>
+
+                    <script>
+                        var boton = document.getElementById('boton');
+                        var lista = document.getElementById('lista');
+                        var checks = document.querySelectorAll('.valores');
+
+                        boton.addEventListener('click',function(){
+                            checks.forEach((e)=>{
+                                console.log(e.value);
+                            });
+                        });
+
+                    
+                    </script>
+                    <!--<a href="/descargar_fictec/2/3" class="btn btn-secondary">Descargar</a>-->
+                
+            </div>
+            
+
+                   
+        </div>
+
+    </div>
+
+{% endblock %}
